@@ -2,6 +2,8 @@ import React from 'react'
 import logo from '../assets/Logo.jpg'
 import logo2 from '../assets/Vector (1).jpg'
 import logo3 from '../assets/Vector (2).jpg'
+import { AllRoutes } from '../pages/AllRoutes'
+import { Link } from 'react-router-dom'
 
 export const Sidebar = () => {
     return (
@@ -13,7 +15,7 @@ export const Sidebar = () => {
                         <img src={logo} />
                     </div>
                     <div className='mt-12 grid gap-4'>
-                        <div className='grid place-content-center  py-1.5 px-0  rounded-md w-full  ' style={{ backgroundColor: "#FEDFE1" }}>
+                 <Link to='/'>     <div className='grid place-content-center  py-1.5 px-0  rounded-md w-full  ' style={{ backgroundColor: "#FEDFE1" }}>
                             <div className='flex justify-center' >
                                 <img src={logo2} />
                             </div>
@@ -22,8 +24,8 @@ export const Sidebar = () => {
                                 <p className="  text-xs  font-normal" style={{ color: "#901E75" }} >Home</p>
                             </div>
 
-                        </div>
-                        <div className='grid place-content-center  py-1.5 px-0 rounded-md w-full ' style={{ backgroundColor: "#E5E7EB" }}>
+                        </div> </Link>  
+                     <Link to='/course'>   <div className='grid place-content-center  py-1.5 px-0 rounded-md w-full ' style={{ backgroundColor: "#E5E7EB" }}>
                             <div className='flex justify-center' >
                                 <img src={logo3} />
                             </div>
@@ -32,13 +34,13 @@ export const Sidebar = () => {
                                 <p className="  text-xs  font-normal" style={{ color: "#83858B" }}  >Coures</p>
                             </div>
 
-                        </div>
+                        </div></Link>
 
                     {/* </div>
                     </div> */}
-                    <div className="" >
+                    <div className="text" >
                     <div >
-                        hi
+                        Logout
                     </div>
                     </div>
 
@@ -62,8 +64,8 @@ export const Sidebar = () => {
           </div> */}
 
             </div>
-            <div className='border-solid border-2 w-screen px-6 py-9'>
-                its jitendra
+            <div className='border-solid border-2 w-screen px-6 py-9' style={{backgroundColor:"#E5E7EB"}}>
+                <AllRoutes/>
             </div>
 
         </div>
