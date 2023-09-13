@@ -1,5 +1,6 @@
 import React from 'react'
 import logo  from '../assets/mdi_magnify.jpg'
+import { CourcePageTable } from '../components/CourcePageTable'
 export const CoursePage = () => {
   return (
     <div>
@@ -16,7 +17,7 @@ export const CoursePage = () => {
       </div>
     </div>
     </div>
-  
+  <CourcePageTable/>
 </div>
   )
 }
